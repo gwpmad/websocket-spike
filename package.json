@@ -1,0 +1,16 @@
+{
+  "name": "websocket-experiment",
+  "version": "1.0.0",
+  "description": "Mimicking something I saw on the BBC Christmas Lectures to experiment with the Websocket API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "develop": "nodemon -x \"cd client; npm run build; cd ..; npm start\" -w . -e js,jsx,scss,hbs,css --ignore ./client/build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0"
+  }
+}
